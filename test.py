@@ -54,7 +54,7 @@ if opcion == '# Home':
                 """)
         
     with col2:
-        st.image("imgs\img1.jpg", caption="Imagen representativa de BankValley", width=450)
+        st.image("imgs/img1.jpg", caption="Imagen representativa de BankValley", width=450)
 
 # BanValley
 elif opcion == '# BankValley':
