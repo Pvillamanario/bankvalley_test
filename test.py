@@ -141,12 +141,12 @@ elif opcion == '# BankValley':
                         """
                         )
 
-    st.image("imgs/BankValley_2.jpg", caption="Oficinas de BankValley Madrid")
+    st.image("imgs/BankValley_2.jpeg", caption="Oficinas de BankValley Madrid")
 
 # Data opportunitty
 elif opcion == '# Data Opportunity':
 
-    st.image("imgs/BankValley_3.jpg", caption="En Plan autónomo")
+    st.image("imgs/BankValley_3.jpeg", caption="En Plan autónomo")
     
     st.markdown("""
                 ### Data Opportunity  
