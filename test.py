@@ -32,12 +32,10 @@ if opcion == '# Home':
 
     with col1:
 
-        st.markdown("""
-                    # Bienvenido al portal de 
+        st.markdown(""" 
                     # # DATA CHASERS 
-                    #
-                    ### Somos  **# Data Chasers**, 
-                    ### el nuevo equipo de Analítica Avanzada de BankValley.
+                    # 
+                    ### Bienvenido al portal del nuevo equipo de Analítica Avanzada de BankValley.
                     """)
 
         st.markdown("""
@@ -48,14 +46,15 @@ if opcion == '# Home':
 
         st.markdown("""
                 ### ¿Qué encontrarás aquí?
-                - **# BankValley**: Explora quiénes somos y por qué somos un referente en banca ética, sostenible e innovadora.
-                - **# Data Oportunity**: En Plan Autónomo. Descubre nuestra primera propuesta de oportunidad de negocio. Un ejemplo concreto de lo que podemos lograr con el poder del análisis de datos.
-                - **# Data Chasers**: Conoce más sobre nuestra filosofía y el equipo detrás de la innovación.
-                - **# Data Culture**: Aprende sobre la cultura de datos que estamos promoviendo dentro de la empresa, diseñada para potenciar cada decisión con base en análisis rigurosos y datos fiables.
-
+                - **# BankValley**: Sumérgete en nuestra identidad como pioneros en banca ética, sostenible e innovadora.
+                - **# Data Oportunity**: En Plan Autónomo. Explora nuestra primera propuesta de oportunidad de negocio. Un ejemplo concreto de lo que podemos lograr con el poder del análisis de datos.
+                - **# Data Governance**: Entiende cómo gobernamos y valoramos los datos como el activo principal en nuestra toma de decisiones.
+                - **# Data Chasers**: Conoce al equipo de vanguardia que está transformando BankValley en una entidad guiada por datos.
+                - **# Data Culture**: Aprende sobre nuestra iniciativa para dinfundir una cultura de datos en toda la empresa, donde cada dato cuenta.
+            
                 #      
-                ### Únete a nosotros para transformar el futuro de BankValley 
-                ### a través del dato!!
+                #### Únete a nosotros para transformar el futuro de BankValley 
+                #### a través del dato!!
                 """)
     with col2:
         st.markdown('#')
