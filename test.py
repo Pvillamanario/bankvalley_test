@@ -308,30 +308,8 @@ elif opcion == '# Data Opportunity':
             st.image("imgs/img1.jpg", caption="BankValley Madrid", width = 550)
 
 
-    with st.expander("#### Business Case"):
+    # with st.expander("#### Business Case"):
 
-        # Ejemplo de gráfico
-        # Datos genéricos creados para el ejemplo
-        data = {
-            'Año': [2017, 2018, 2019, 2020, 2021, 2022, 2023],
-            'Clientes Autónomos': [500, 600, 700, 800, 900, 1000, 1100],
-            'Hipotecas Concedidas': [20, 25, 30, 35, 40, 45, 50]
-        }
-
-        # Creación del DataFrame
-        df = pd.DataFrame(data)
-
-        # Código para visualizar un gráfico en Streamlit usando Altair
-        chart = alt.Chart(df).mark_line(point=True).encode(
-            x='Año:N',
-            y=alt.Y('Clientes Autónomos', axis=alt.Axis(title='Número de Autónomos')),
-            color=alt.Color('Hipotecas Concedidas', legend=alt.Legend(title="Hipotecas Concedidas por Año"))
-        ).properties(
-            title='Evolución de Autónomos y Hipotecas Concedidas'
-        )
-
-        # Usar Streamlit para mostrar el gráfico
-        st.altair_chart(chart, use_container_width=True)
 
 # Data Governance
 elif opcion == '# Data Governance':
@@ -446,12 +424,12 @@ elif opcion == '# Data Governance':
 # Data Chasers
 elif opcion == '# Data Chasers':
 
+    st.image("imgs/BankValley_6.jpeg", caption="Cthulhu llamando a la revolución del Dato")
+
     st.markdown("""
                 # # Data Chasers
-                ### Guiados por Cthulhu, exploramos las profundidades de los datos e invocamos poderosos insights
+                ### Guiados por Cthulhu, exploramos las profundidades de los datos e invocamos poderosos insights:
                 """)
-    
-    st.image("imgs/img1.jpg", caption="BankValley Madrid")
 
     st.markdown("""
                 ##### Fomentar un cambio cultural en BankValley es esencial para hacer que los datos sean democráticos, accesibles, valiosos y accionables. 
@@ -476,7 +454,7 @@ elif opcion == '# Data Chasers':
                     """)
         
     with col2:
-        with st.expander("#### Actividades para Fomentar los Datos"):
+        with st.expander("#### Invocando al Dato"):
             st.write("""
                     - **El Rincón de Cthulhu**:  
                     Espacio de aprendizaje y asistencia para quienes se inician en el uso de datos, haciendo que la analítica sea más accesible.
