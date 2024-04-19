@@ -33,7 +33,8 @@ if opcion == '# Home':
     with col1:
 
         st.markdown("""
-                    # Bienvenido al portal de # DATA CHASERS 
+                    # Bienvenido al portal de 
+                    # # DATA CHASERS 
                     #
                     ### Somos  **# Data Chasers**, 
                     ### el nuevo equipo de Analítica Avanzada de BankValley.
@@ -146,7 +147,7 @@ elif opcion == '# BankValley':
 # Data opportunitty
 elif opcion == '# Data Opportunity':
 
-    st.image("imgs/BankValley_3.jpeg", caption="En Plan autónomo")
+    st.image("imgs/BankValley_4.jpeg", caption="En Plan autónomo")
     
     st.markdown("""
                 ### Data Opportunity  
@@ -353,7 +354,7 @@ elif opcion == '# Data Governance':
                     """)
         
     with col2:
-        st.image("imgs/img1.jpg", caption="BankValley Madrid")
+        st.image("imgs/BankValley_5.jpeg", caption="Hacia un Data Governance")
 
 
     with st.expander("#### Organización Existente y Normas Culturales"):
