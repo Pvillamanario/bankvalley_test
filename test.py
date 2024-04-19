@@ -22,27 +22,29 @@ st.set_page_config(layout="wide")
 
 # Barra lateral para navegación
 st.sidebar.title("# DATA CHASERS")
-opcion = st.sidebar.radio("", ('# Home', '# BankValley', '# Data Opportunity', '# Data Team', '# Data Culture', '# Nexts steps...'))
+opcion = st.sidebar.radio("", ('# Home', '# BankValley', '# Data Opportunity', '# Data Governance', '# Data Chasers', '# Nexts steps...'))
 
 
 # Home
 if opcion == '# Home':
 
-    st.markdown("""
-                # Bienvenido a # DATA CHASERS
-
-                ### ¡Hola! 
-                ### Somos  **# Data Chasers**, el equipo de Analítica Avanzada de BankValley.
-
-                #### Este espacio está dedicado a demostrar cómo la integración de nuevas herramientas analíticas y el aprovechamiento estratégico del dato están creando oportunidades de negocio únicas.
-                """)
-
-    st.markdown('#')
-    st.markdown('#')
-
-    col1, col2 = st.columns([6, 4])  # Ajusta la proporción según necesidad
+    col1, col2, col3 = st.columns([5, 1, 4])  # Ajusta la proporción según necesidad
 
     with col1:
+
+        st.markdown("""
+                    # Bienvenido al portal de # DATA CHASERS 
+                    #
+                    ### Somos  **# Data Chasers**, 
+                    ### el nuevo equipo de Analítica Avanzada de BankValley.
+                    """)
+
+        st.markdown("""
+                    #### Este espacio está dedicado a mostrar cómo la integración de nuevas herramientas analíticas y el aprovechamiento estratégico del dato están creando oportunidades de negocio únicas.
+                    """)
+
+        st.markdown('#')
+
         st.markdown("""
                 ### ¿Qué encontrarás aquí?
                 - **# BankValley**: Explora quiénes somos y por qué somos un referente en banca ética, sostenible e innovadora.
@@ -50,69 +52,67 @@ if opcion == '# Home':
                 - **# Data Chasers**: Conoce más sobre nuestra filosofía y el equipo detrás de la innovación.
                 - **# Data Culture**: Aprende sobre la cultura de datos que estamos promoviendo dentro de la empresa, diseñada para potenciar cada decisión con base en análisis rigurosos y datos fiables.
 
-                Únete a nosotros para transformar el futuro de BankValley a través del dato.
+                #      
+                ### Únete a nosotros para transformar el futuro de BankValley 
+                ### a través del dato!!
                 """)
-        
     with col2:
-        st.image("imgs/img1.jpg", caption="Imagen representativa de BankValley", width=450)
+        st.markdown('#')
+
+    with col3:
+        st.image("imgs/BankValley_1.jpeg", caption="BankValley Madrid", width=450)
 
 # BanValley
 elif opcion == '# BankValley':
+
     st.markdown("""
                 # BankValley
                 ### Referente en Banca Ética y Sostenible
-                Descubre cómo nuestra misión, valores y acciones están transformando la industria financiera hacia un futuro más responsable y sostenible.
+                #### Descubre cómo nuestra misión, valores y acciones están transformando la industria financiera hacia un futuro más responsable y sostenible.
                 """)
 
-    with st.expander("#### Filosofía y Valores"):
-        st.write("""
-                 - **Líder en Banca Ética y Sostenible**  
-                 En BankValley, estamos comprometidos con el cambio social, ambiental y cultural, integrando la sostenibilidad en el núcleo de nuestra estrategia financiera. Nos esforzamos por ser agentes de cambio, liderando el camino hacia una industria bancaria más consciente y respetuosa del entorno.
-                 
-                 - **Enfoque Sostenible**  
-                 Nuestra misión va más allá del negocio tradicional; rechazamos activamente los fondos y las inversiones que no cumplen con nuestros estrictos criterios de sostenibilidad. Esta postura nos permite mantener un compromiso firme con el desarrollo sostenible, influenciando positivamente las prácticas financieras en el mercado.
-                 
-                 - **Agentes de Cambio**  
-                 Como pioneros en incorporar la responsabilidad social y ambiental en todas nuestras operaciones, estamos estableciendo nuevos estándares en el sector bancario. Nuestro enfoque progresista no solo responde a la demanda actual de mayor transparencia y ética en las finanzas, sino que también modela el impacto que una empresa puede tener en la sociedad.
-                 """)
 
-    with st.expander("#### Inversiones Sostenibles"):
-        st.write("""
-                 - **Compromiso con el Futuro**   
-                 Nuestro portafolio de inversiones refleja nuestro compromiso con un futuro sostenible. Nos centramos en sectores como la agricultura ecológica, la bioconstrucción, el transporte eficiente y las energías limpias.
-                 
-                 - **Impacto Medioambiental**   
-                 Ofrecemos fondos de inversión y ecodepósitos que buscan no solo un retorno financiero, sino también un impacto medioambiental positivo, reafirmando nuestro compromiso con la sostenibilidad a largo plazo.
-                 """)
+    col1, col2 = st.columns([1, 1])  # Ajusta la proporción según necesidad
 
-    with st.expander("#### Clientes y Enfoque de Negocio"):
-        st.write("""
-                 - **Clientes Conscientes**   
-                 Dirigimos nuestros servicios a clientes que valoran la ética y la responsabilidad ecológica en sus decisiones económicas. Nuestra base de clientes incluye tanto individuos como empresas que están alineadas con valores progresistas.
-                 
-                 - **Apoyo a Proyectos Sostenibles**   
-                 Hasta la fecha, hemos apoyado más de 4,000 proyectos que comparten nuestra visión de un modelo económico alternativo y sostenible.
-                 """)
+    with col1:
 
-    with st.expander("#### Hitos de BankValley"):
-        col1, col2 = st.columns(2)
 
-        with col1:
-            st.markdown("""
-                        - **Crecimiento Sostenido**  
-                        Desde nuestra llegada a España en 2004, hemos crecido notablemente, gestionando un patrimonio que ha escalado a más de €6,431 millones en 2023.
-                        
-                        - **Expansión de la Base de Clientes**  
-                        Nuestro número de clientes ha aumentado significativamente, de 149K en 2013 a 190K en 2023, reflejando una confianza creciente en nuestro modelo de banca ética.
-                        
-                        - **Aumento en la Plantilla**  
-                        Nuestros empleados han crecido proporcionalmente, de 291 en 2013 a 583 en 2023, demostrando el éxito y la expansión del banco.
-                        
-                        - **Apoyo a Autónomos y PYMEs**  
-                        Más del 21% de nuestros clientes son autónomos, superando la media nacional, con un fuerte compromiso en el apoyo a pequeñas y medianas empresas.
-                        """)
+        with st.expander("#### Filosofía y Valores"):
+            st.write("""
+                    - **Líder en Banca Ética y Sostenible**  
+                    En BankValley, estamos comprometidos con el cambio social, ambiental y cultural, integrando la sostenibilidad en el núcleo de nuestra estrategia financiera. Nos esforzamos por ser agentes de cambio, liderando el camino hacia una industria bancaria más consciente y respetuosa del entorno.
+                    
+                    - **Enfoque Sostenible**  
+                    Nuestra misión va más allá del negocio tradicional; rechazamos activamente los fondos y las inversiones que no cumplen con nuestros estrictos criterios de sostenibilidad. Esta postura nos permite mantener un compromiso firme con el desarrollo sostenible, influenciando positivamente las prácticas financieras en el mercado.
+                    
+                    - **Agentes de Cambio**  
+                    Como pioneros en incorporar la responsabilidad social y ambiental en todas nuestras operaciones, estamos estableciendo nuevos estándares en el sector bancario. Nuestro enfoque progresista no solo responde a la demanda actual de mayor transparencia y ética en las finanzas, sino que también modela el impacto que una empresa puede tener en la sociedad.
+                    """)
 
-        with col2:
+        with st.expander("#### Inversiones Sostenibles"):
+            st.write("""
+                    - **Compromiso con el Futuro**   
+                    Nuestro portafolio de inversiones refleja nuestro compromiso con un futuro sostenible. Nos centramos en sectores como la agricultura ecológica, la bioconstrucción, el transporte eficiente y las energías limpias.
+                    
+                    - **Impacto Medioambiental**   
+                    Ofrecemos fondos de inversión y ecodepósitos que buscan no solo un retorno financiero, sino también un impacto medioambiental positivo, reafirmando nuestro compromiso con la sostenibilidad a largo plazo.
+                    """)
+
+    with col2:
+        with st.expander("#### Clientes y Enfoque de Negocio"):
+            st.write("""
+                    - **Clientes Conscientes**   
+                    Dirigimos nuestros servicios a clientes que valoran la ética y la responsabilidad ecológica en sus decisiones económicas. Nuestra base de clientes incluye tanto individuos como empresas que están alineadas con valores progresistas.
+                                        
+                    - **Apoyo a Autónomos y PYMEs**  
+                    Más del **21% de nuestros clientes son autónomos**, superando la media nacional, con un fuerte compromiso en el apoyo a pequeñas y medianas empresas.
+                    
+                    - **Apoyo a Proyectos Sostenibles**   
+                    Hasta la fecha, hemos apoyado más de 4,000 proyectos que comparten nuestra visión de un modelo económico alternativo y sostenible.
+                    """)
+
+        with st.expander("#### Hitos de BankValley"):
+
             # Creación del gráfico de scatter plot
             chart = alt.Chart(df).mark_circle().encode(
                 x=alt.X('Año:O', axis=alt.Axis(labelAngle=-45)),
@@ -129,80 +129,84 @@ elif opcion == '# BankValley':
             # Mostrar gráfico en Streamlit
             st.altair_chart(chart, use_container_width=True)
 
+            st.markdown("""
+                        - **Crecimiento Sostenido**  
+                        Desde nuestra llegada a España en 2004, hemos crecido notablemente, gestionando un patrimonio que ha escalado a más de €6,431 millones en 2023.
+                        
+                        - **Expansión de la Base de Clientes**  
+                        Nuestro número de clientes ha aumentado significativamente, de 149K en 2013 a 190K en 2023, reflejando una confianza creciente en nuestro modelo de banca ética.
+                        
+                        - **Aumento en la Plantilla**  
+                        Nuestros empleados han crecido proporcionalmente, de 291 en 2013 a 583 en 2023, demostrando el éxito y la expansión del banco.
+                        """
+                        )
+
+    st.image("imgs/BankValley_2.jpg", caption="Oficinas de BankValley Madrid")
+
 # Data opportunitty
 elif opcion == '# Data Opportunity':
 
+    st.image("imgs/BankValley_3.jpg", caption="En Plan autónomo")
+    
     st.markdown("""
-                # Data Opportunity
-                ## "En Plan Autónomo"
-                ### Propuesta Única de Valor
-                "En Plan Autónomo" desbloquea nuevas posibilidades para autónomos, fusionando tecnología de vanguardia y financiación ética para
-                 convertir la viabilidad económica en una realidad sostenible.
-                """)
+                ### Data Opportunity  
+                # 'En Plan Autónomo'
+                ###
+                **'En Plan Autónomo'** aprovecha la tecnología, las personas y la cultura del dato para ofrecer soluciones financieras personalizadas.
 
-    with st.expander("#### Problema"):
-        st.write("""
-                - **Dificultades para Autónomos**:   
-                Los autónomos enfrentan barreras significativas al solicitar hipotecas debido a los estrictos requisitos de garantía y una percepción 
-                general de alto riesgo. Esta situación limita su acceso a financiación necesaria para sus negocios y proyectos personales.  
-                
-                - **Evaluación de Riesgo Inadecuada**:  
-                Las herramientas estándar de evaluación de riesgo no capturan adecuadamente la realidad financiera de los autónomos, lo que resulta en 
-                 oportunidades perdidas tanto para el banco como para sus clientes, potencialmente desestimando clientes solventes.  
-
-                - **Falta de Personalización**:  
-                 El mercado actual carece de enfoques personalizados en la evaluación de solicitudes de hipoteca para autónomos, ignorando las particularidades
-                  de su flujo de ingresos y estabilidad financiera.  
+                Desbloqueamos nuevas posibilidades para autónomos, fusionando tecnología de vanguardia y financiación ética para convertir la viabilidad 
+                económica en una realidad sostenible.  
                  
-                - **Clientes Alineados con la Misión del Banco**:  
-                 Una proporción significativa de clientes autónomos de BankValley está involucrada en proyectos sostenibles y éticos, lo que refleja los valores 
-                 y la misión del banco, destacando la necesidad de ofrecer productos que se alineen con sus principios.
+                Este enfoque fomenta un cambio positivo en la forma en que el banco se relaciona con el segmento de los autónomos, alineando nuestras operaciones 
+                no solo con nuestras metas económicas, sino también con nuestros valores éticos y de sostenibilidad.
                 """)
+    
 
-    with st.expander("#### Alternativas y sus Limitaciones"):
+    col1, col2 = st.columns([1, 1])  
+
+    with col1:
+        with st.expander("#### La situación actual"):
+            st.write("""
+                    - **Dificultades para Autónomos**:   
+                    Los autónomos enfrentan barreras significativas al solicitar hipotecas debido a los estrictos requisitos de garantía y una percepción 
+                    general de alto riesgo. Esta situación limita su acceso a financiación necesaria para sus negocios y proyectos personales.  
+                    
+                    - **Evaluación de Riesgo Inadecuada**:  
+                    Las herramientas estándar de evaluación de riesgo no capturan adecuadamente la realidad financiera de los autónomos, lo que resulta en 
+                    oportunidades perdidas tanto para el banco como para sus clientes, potencialmente desestimando clientes solventes.  
+
+                    - **Falta de Personalización**:  
+                    El mercado actual carece de enfoques personalizados en la evaluación de solicitudes de hipoteca para autónomos, ignorando las particularidades
+                    de su flujo de ingresos y estabilidad financiera.  
+                    
+                    - **Clientes Alineados con la Misión del Banco**:  
+                    Una proporción significativa de clientes autónomos de BankValley está involucrada en proyectos sostenibles y éticos, lo que refleja los valores 
+                    y la misión del banco, destacando la necesidad de ofrecer productos que se alineen con sus principios.
+                    """)
+    with col2:
+        with st.expander("#### Soluciones alternativas y sus limitaciones"):
+            st.write("""
+                    - **Pago al Contado**:  
+                    Esta opción, aunque ideal, no es viable para la mayoría de los autónomos debido a los altos requerimientos de capital inicial, 
+                    lo que limita severamente su accesibilidad a propiedades.  
+
+                    - **Hipotecas de Corto Plazo**:  
+                    Las hipotecas con términos de hasta 10 años, aunque disponibles, resultan en pagos mensuales elevados que no son sostenibles para 
+                    autónomos con ingresos variables.  
+
+                    - **Entidades Financieras de Menor Reputación**:  
+                    Frente a la rigidez de bancos tradicionales, los autónomos pueden verse forzados a optar por entidades con menos credibilidad, que 
+                    pueden ofrecer condiciones menos favorables y más riesgosas.  
+
+                    - **Préstamos Federados y Cuentas Pignoradas**:  
+                    Estas opciones de financiación, aunque creativas, requieren que los autónomos bloqueen una cantidad significativa de dinero como garantía, 
+                    restringiendo su liquidez y flexibilidad financiera.
+                    """)
+
+    with st.expander("#### Nuestra propuesta"):
         st.write("""
-                - **Pago al Contado**:  
-                 Esta opción, aunque ideal, no es viable para la mayoría de los autónomos debido a los altos requerimientos de capital inicial, 
-                 lo que limita severamente su accesibilidad a propiedades.  
-
-                - **Hipotecas de Corto Plazo**:  
-                 Las hipotecas con términos de hasta 10 años, aunque disponibles, resultan en pagos mensuales elevados que no son sostenibles para 
-                 autónomos con ingresos variables.  
-
-                - **Entidades Financieras de Menor Reputación**:  
-                 Frente a la rigidez de bancos tradicionales, los autónomos pueden verse forzados a optar por entidades con menos credibilidad, que 
-                 pueden ofrecer condiciones menos favorables y más riesgosas.  
-
-                - **Préstamos Federados y Cuentas Pignoradas**:  
-                 Estas opciones de financiación, aunque creativas, requieren que los autónomos bloqueen una cantidad significativa de dinero como garantía, 
-                 restringiendo su liquidez y flexibilidad financiera.
-                """)
-
-    with st.expander("#### Soluciones Candidatas"):
-        st.write("""
-                - **Scoring Personalizado para Preconcesión**:  
-                 Implementación de un modelo de scoring avanzado, utilizando datos de transacciones y comportamiento financiero, para ofrecer hipotecas preconcedidas 
-                 a autónomos, adaptándose mejor a sus necesidades y capacidad de pago.  
-                
-                - **Paquetización de Productos con Incentivos**:  
-                 Diseño de ofertas personalizadas que integren hipotecas con seguros profesionales y de vida, ofreciendo beneficios mutuos que incluyan descuentos o 
-                 condiciones favorables en los intereses.  
-                
-                - **Financiación Colaborativa con Blockchain**:  
-                 Utilización de blockchain para crear un sistema de financiación colectiva que permita a otros clientes del banco invertir en hipotecas de proyectos 
-                 alineados con los valores de BankValley, asegurando transparencia y seguridad.  
-                
-                - **Asesoría Financiera Integral para Autónomos**:  
-                 Proporcionar un servicio de asesoría especializado que combine la evaluación de hipotecas con asesoramiento financiero estratégico, ayudando a los 
-                 autónomos a optimizar su salud financiera a largo plazo.  
-                
-                - **Flexibilidad en Garantías y Términos de Pago**:  
-                 Introducir condiciones de hipoteca con garantías más flexibles y plazos de amortización adaptados al flujo de ingresos variable de muchos autónomos, 
-                 permitiendo pagos más bajos durante periodos de menor ingreso.  
-                """)
-
-    with st.expander("#### En Plan Autónomo"):
-        st.write("""
+                 ## 'En Plan Autónomo'
+                 #
                 - **Evaluación de Riesgo Personalizada**:  
                 Utilizando técnicas avanzadas de aprendizaje automático, 'En Plan Autónomo' analiza patrones financieros detallados para ofrecer créditos preaprobados. Este enfoque permite ajustar los límites de crédito individualmente, ofreciendo préstamos que varían desde 40.000€ hasta 3 millones de euros, adaptándose a las necesidades y capacidades financieras específicas de cada autónomo, desde pequeños emprendedores hasta grandes empresarios.
 
@@ -219,120 +223,327 @@ elif opcion == '# Data Opportunity':
                 El proceso de solicitud y gestión de 'En Plan Autónomo' es completamente digital, eliminando la necesidad de trámites burocráticos y visitas a sucursales. Los autónomos pueden acceder a todos los servicios a través de una plataforma intuitiva que incluye soporte virtual, facilitando una experiencia de usuario fluida y eficiente. Este enfoque no solo mejora la accesibilidad y la comodidad para el usuario, sino que también agiliza el proceso de aprobación y desembolso del crédito.
                 """)
     
-    with st.expander("#### Sinergias internas"):
-        st.write("""
-                **Tecnología:**
-                - **Integración de Herramientas Avanzadas**: Utilizamos la infraestructura tecnológica existente del banco, enriqueciéndola con soluciones avanzadas de inteligencia artificial y aprendizaje automático. Esta integración mejora significativamente la toma de decisiones y abre nuevas oportunidades de negocio al permitir un análisis más profundo y preciso de los datos financieros.
-                - **Plataforma de Análisis de Big Data**: Hemos desarrollado sistemas que procesan grandes volúmenes de datos financieros en tiempo real. Esta capacidad nos permite realizar evaluaciones del riesgo crediticio de manera mucho más precisa y ágil, adaptándonos a las necesidades dinámicas del mercado y de nuestros clientes.
+    with st.expander("#### Estrategia del dato y Sinergias internas"):
 
-                **Personas / Cultura:**
-                - **Equipo Interdisciplinario**: Hemos formado un nuevo departamento especializado en análisis de datos y algoritmos de inteligencia artificial. Este equipo trabaja en estrecha colaboración con otros departamentos para asegurar que las soluciones de datos se integren de manera efectiva en todas las áreas del banco.
-                - **Fomento de la Cultura del Dato**: Iniciamos diversas iniciativas para educar y promover la comprensión y el uso estratégico de los datos entre todos los empleados del banco. Estas actividades están diseñadas para transformar la cultura organizacional y hacer que el pensamiento basado en datos sea una parte central de nuestra identidad corporativa.
+        col1, col2 = st.columns([1, 1])  
 
-                **Datos:**
-                - **Acceso y Mejora de Datos**: Aprovechamos los datos de clientes existentes y los complementamos con datos externos para enriquecer los perfiles de riesgo. Esta estrategia nos permite no solo mejorar la precisión de nuestro scoring, sino también ofrecer productos más personalizados.
-                - **Privacidad y Ética de Datos**: Nos comprometemos a garantizar la protección de la privacidad de nuestros clientes y a asegurar un uso ético de los datos en todos nuestros procesos. La integridad y seguridad de los datos son fundamentales para mantener la confianza de nuestros clientes.
+        with col1:
+            st.write("""
+                    #### Tecnología:                    
+                    - **Plataforma de Análisis en Cloud**:  
+                     En los últimos años, Bankvalley ha ido desplegando su infraestructura en la nube, desarrollando sistemas que procesan grandes volúmenes de datos financieros.  
+                     Esta capacidad nos permite realizar evaluaciones del riesgo crediticio de manera mucho más precisa y ágil, sin la necesidad de infracestructura adicional.
 
-                **Algoritmos:**
-                - **Algoritmos de Machine Learning**: Empleamos modelos predictivos como Random Forest o Gradient Boosting para el scoring crediticio. Estos modelos están diseñados para considerar no solo la estabilidad financiera de los autónomos sino también su potencial de crecimiento, ofreciendo así una evaluación más justa y beneficiosa para ambos, el cliente y el banco.
-                - **Personalización y Adaptabilidad**: Utilizamos algoritmos para personalizar productos financieros y adaptar las condiciones de las hipotecas a las necesidades individuales y al comportamiento financiero de cada autónomo, permitiendo una flexibilidad que refleja la realidad económica de nuestros clientes.
+                     - **Integración de Herramientas Avanzadas**:   
+                     Utilizamos la infraestructura tecnológica ya existente del banco, incorporamos soluciones de Anallítica Avanzadas, aprendizaje automático e IA.  
+                     Esta integración mejora significativamente la toma de decisiones y abre nuevas oportunidades de negocio al permitir un análisis más profundo y 
+                     preciso de los datos financieros.
 
-                **"En Plan Autónomo" como Concepto Integral:** aprovecha la tecnología, las personas y la cultura del dato para ofrecer soluciones financieras personalizadas. Este enfoque fomenta un cambio positivo en la forma en que el banco se relaciona con el segmento de los autónomos, alineando nuestras operaciones no solo con nuestras metas económicas, sino también con nuestros valores éticos y de sostenibilidad.
-                """)
+                    #### Personas y Cultura:
+                    - **Equipo Interdisciplinario**:  
+                     Hemos formado un nuevo departamento especializado en análisis de datos y algoritmos de inteligencia artificial.  
+                     Este equipo trabaja en estrecha colaboración con otros departamentos para asegurar que las soluciones de datos se integren de manera efectiva 
+                     en todas las áreas del banco.
+                    
+                    - **Fomento de la Cultura del Dato**:  
+                     Iniciamos diversas iniciativas para educar y promover la comprensión y el uso estratégico de los datos entre todos los empleados del banco.  
+                     Estas actividades están diseñadas para transformar la cultura organizacional y hacer que el pensamiento basado en datos sea una parte central 
+                     de nuestra identidad corporativa.
 
+                    """)
+            
+            with col2:
+                st.write("""
+                    #### Datos:
+                    - **Acceso y Mejora de Datos**:  
+                        Aprovechamos los datos de clientes existentes y los complementamos con datos externos para enriquecer el perfilado y la segmentación de nuestros clientes.  
+                         Esta estrategia nos permite no solo mejorar la precisión de nuestro scoring, sino también ofrecer productos más personalizados.
+                    
+                    - **Privacidad y Ética de Datos**:  
+                        Nos comprometemos a garantizar la protección de la privacidad de nuestros clientes, a asegurar un uso ético de los datos en todos nuestros procesos y
+                         a prevenir activamente el sesgo en nuestros modelos.  
+                         La integridad y seguridad de los datos son fundamentales para mantener la confianza de nuestros clientes.
+
+                    #### Algoritmos:
+                    - **Algoritmos de Machine Learning**:  
+                        Empleamos modelos predictivos y de clusterización, siendo posible considerar y ponderar decenas de variables para llevar a otro nivel nuestro scoring de riesgo crediticio.  
+                         Estos modelos están diseñados para considerar no solo la estabilidad financiera de los autónomos sino también su potencial de crecimiento, ofreciendo así una evaluación más justa y beneficiosa para ambos, el cliente y el banco.
+                    
+                    - **Personalización y Adaptabilidad**:  
+                        Utilizamos algoritmos para personalizar productos financieros y adaptar las condiciones de las hipotecas a las necesidades individuales y al comportamiento financiero de cada autónomo, permitiendo una flexibilidad que refleja la realidad económica de nuestros clientes.
+
+                    """)
+
+        
     with st.expander("#### KPIs para medir el Éxito"):
-        st.write("""
-                - **Tasa de Adopción del Producto**:  
-                 Medición del porcentaje de autónomos a los que se les ha ofrecido 'En Plan Autónomo' respecto al total de clientes autónomos del banco.  
-                
-                - **Tasa de Conversión**:  
-                 Porcentaje de autónomos que efectivamente contratan 'En Plan Autónomo' tras la oferta.  
-                
-                - **Rendimiento Financiero**:  
-                 Evaluación del beneficio neto de las hipotecas concedidas bajo 'En Plan Autónomo' y comparación con la tasa de interés media de otros productos 
-                 hipotecarios del banco.  
-                
-                - **Calidad del Crédito**:  
-                 Monitoreo del porcentaje de impagos o morosidad en 'En Plan Autónomo' en comparación con productos estándar del banco y observación de cambios en 
-                 la puntuación crediticia media de los clientes autónomos tras la implementación del producto.  
-                
-                - **Impacto en la Sostenibilidad y la Misión del Banco**:  
-                 Número o porcentaje de proyectos financiados a través de 'En Plan Autónomo' que están alineados con los objetivos de sostenibilidad y ética de BankValley.  
-                
-                - **Satisfacción del Cliente**:  
-                 Resultados de encuestas de satisfacción específicas para 'En Plan Autónomo' y número de referencias o recomendaciones del producto por parte de clientes 
-                 autónomos existentes.  
-                """)
 
-    # Ejemplo de gráfico
-    # Datos genéricos creados para el ejemplo
-    data = {
-        'Año': [2017, 2018, 2019, 2020, 2021, 2022, 2023],
-        'Clientes Autónomos': [500, 600, 700, 800, 900, 1000, 1100],
-        'Hipotecas Concedidas': [20, 25, 30, 35, 40, 45, 50]
-    }
+        col1, col2 = st.columns([1, 1])  
 
-    # Creación del DataFrame
-    df = pd.DataFrame(data)
+        with col1:
+            st.write("""
+                    - **Tasa de Adopción del Producto**:  
+                    Medición del porcentaje de autónomos a los que se les ha ofrecido 'En Plan Autónomo' respecto al total de clientes autónomos del banco.  
+                    
+                    - **Tasa de Conversión**:  
+                    Porcentaje de autónomos que efectivamente contratan tras la oferta.  
+                    
+                    - **Rendimiento Financiero**:  
+                    Evaluación del beneficio neto de las hipotecas concedidas bajo 'En Plan Autónomo' y comparación con la tasa de interés media de otros productos 
+                    hipotecarios del banco.  
+                    
+                    - **Calidad del Crédito**:  
+                    Monitoreo del porcentaje de impagos o morosidad en 'En Plan Autónomo' en comparación con productos estándar del banco y observación de cambios en 
+                    la puntuación crediticia media de los clientes autónomos tras la implementación del producto.  
+                    
+                    - **Impacto en la Sostenibilidad y la Misión del Banco**:  
+                    Número o porcentaje de proyectos financiados a través de 'En Plan Autónomo' que están alineados con los objetivos de sostenibilidad y ética de BankValley.  
+                    
+                    - **Satisfacción del Cliente**:  
+                    Resultados de encuestas de satisfacción específicas y número de referencias o recomendaciones del producto por parte de clientes 
+                    autónomos existentes.  
+                    """)
+            
+        with col2:
+            st.image("imgs/img1.jpg", caption="BankValley Madrid", width = 550)
 
-    # Código para visualizar un gráfico en Streamlit usando Altair
-    chart = alt.Chart(df).mark_line(point=True).encode(
-        x='Año:N',
-        y=alt.Y('Clientes Autónomos', axis=alt.Axis(title='Número de Autónomos')),
-        color=alt.Color('Hipotecas Concedidas', legend=alt.Legend(title="Hipotecas Concedidas por Año"))
-    ).properties(
-        title='Evolución de Autónomos y Hipotecas Concedidas'
-    )
 
-    # Usar Streamlit para mostrar el gráfico
-    st.altair_chart(chart, use_container_width=True)
+    with st.expander("#### Business Case"):
 
-# Data Team
-elif opcion == '# Data Team':
+        # Ejemplo de gráfico
+        # Datos genéricos creados para el ejemplo
+        data = {
+            'Año': [2017, 2018, 2019, 2020, 2021, 2022, 2023],
+            'Clientes Autónomos': [500, 600, 700, 800, 900, 1000, 1100],
+            'Hipotecas Concedidas': [20, 25, 30, 35, 40, 45, 50]
+        }
+
+        # Creación del DataFrame
+        df = pd.DataFrame(data)
+
+        # Código para visualizar un gráfico en Streamlit usando Altair
+        chart = alt.Chart(df).mark_line(point=True).encode(
+            x='Año:N',
+            y=alt.Y('Clientes Autónomos', axis=alt.Axis(title='Número de Autónomos')),
+            color=alt.Color('Hipotecas Concedidas', legend=alt.Legend(title="Hipotecas Concedidas por Año"))
+        ).properties(
+            title='Evolución de Autónomos y Hipotecas Concedidas'
+        )
+
+        # Usar Streamlit para mostrar el gráfico
+        st.altair_chart(chart, use_container_width=True)
+
+# Data Governance
+elif opcion == '# Data Governance':
+
+    col1, col2 = st.columns([3, 2])  
+
+    with col1:
+        st.markdown("""
+                    # Data Governance
+
+                    #### Una política del dato bien definida aporta a BankValley un marco robusto para tomar decisiones estratégicas informadas, potenciando la eficiencia operativa y la competitividad en el mercado.
+                    
+                    La implementación efectiva de una estrategia de gobernanza de datos es esencial para organizaciones como BankValley, 
+                    donde la ética y la responsabilidad son pilares fundamentales. Al asegurar una gestión de datos adecuada, no solo se optimizan las operaciones internas, 
+                    sino que también se refuerza la confianza en nuestra institución financiera. Investigaciones indican que una mala gobernanza de datos puede llevar al 
+                    fracaso de hasta un 40% de los proyectos empresariales, lo cual subraya la necesidad de establecer prácticas robustas de manejo de datos desde el inicio.
+
+                    Esta propuesta ayudará a BankValley a enfrentar los desafíos de transformarse en una organización completamente orientada a datos, 
+                    asegurando que la calidad y la integridad de los datos se mantengan en cada paso del camino.
+                    """)
+        
+    with col2:
+        st.image("imgs/img1.jpg", caption="BankValley Madrid")
+
+
+    with st.expander("#### Organización Existente y Normas Culturales"):
+        col1, col2, col3 = st.columns([1, 1, 1])  
+
+        with col1:
+            st.write("""
+                    #### Cultura:
+                     
+                    - **Decisión Basada en Datos:**  
+                     Proponemos fortalecer la cultura donde las decisiones se toman basadas en datos rigurosos, asegurando que líderes y main players estén entrenados en 
+                     interpretación de datos.
+                    
+                     - **Comités de Datos:**  
+                     Implementar comités multidisciplinares que incluyan expertos en datos para asegurar que las decisiones estén bien fundamentadas y respaldadas por 
+                     análisis completos.
+                    """)
+
+        with col2:
+            st.write("""
+                    #### Modelo Operativo:
+                     
+                    - **Adopción de un Modelo Federado:**  
+                     Proponemos una transición gradual hacia un modelo operativo federado que permita avanzar hacia la democratización del dato en todas las áreas de manera gradual.
+                    
+                     - **Implementación Uniforme de Políticas:**  
+                     Asegurar que las políticas de datos y las mejores prácticas se apliquen de manera uniforme en todas las áreas de negocio. 
+                     Nos comprometemos a prestar todo el apoyo a las diferentes áreas para asegurar una transición fluida.
+                    """)
+
+        with col3:
+            st.write("""
+                    #### Roles:
+                     
+                    - **CDO (Chief Data Officer):**  
+                     Este rol será clave en supervisar la visión y estrategia de datos del banco, asegurando el alineamiento con los objetivos estratégicos globales y 
+                     promoviendo la cultura de datos en BankValley.
+                    
+                     - **Data Owners y Data Stewards:**  
+                     Serán los custodios de la calidad de los datos, trabajando para mantener la integridad y cumplimiento a lo largo del ciclo de vida de los datos.
+                     
+                     - **Data Scientists y Analysts:**  
+                     Fundamental para el desarrollo de modelos y análisis que descubren nuevas oportunidades basadas en insights de datos. 
+                     Forma parte de la estrategia que se integren gradualmente en todas las áreas de negocio para impulsando las decisiones basadas en datos.
+                    """)
+
+    with st.expander("#### Habilitadores Tecnológicos"):
+        col1, col2, col3 = st.columns([1, 1, 1])
+
+        with col1:
+            st.write("""
+                    #### Glosario de Negocio:
+                     
+                    - **Establecimiento de un Lenguaje Común:**  
+                    Propuesta para crear un glosario empresarial que defina claramente todos los términos clave, KPIs y métricas, facilitando un lenguaje unificado y 
+                    evitando malentendidos en la interpretación de los datos.
+                     
+                    - **Actualización y Mantenimiento Continuo:**  
+                    Asegurar que el glosario se mantenga actualizado con las últimos cambios de negocio, garantizando que todos los empleados tengan acceso a la 
+                     misma información y la interpretación se unívoca.
+                    """)
+
+        with col2:
+            st.write("""
+                    #### Gestión de la Calidad del Dato:
+                     
+                    - **Definición de Estándares de Calidad:**  
+                    Establecer un marco riguroso que defina las dimensiones de la calidad de los datos como la precisión, actualidad, relevancia, consistencia o la fiabilidad,  
+                    asegurando que los datos que respaldan nuestras decisiones y operaciones sean de calidad.
+                     
+                    - **Monitorización y Reporte Continuo:**  
+                    Implementar herramientas y procesos para monitorizar continuamente la calidad de los datos y reportar cualquier desviación de los estándares establecidos, 
+                     permitiendo intervenir rápidamente.
+                    """)
+
+        with col3:
+            st.write("""
+                    #### Plan de Comunicación:
+                     
+                    - **Implementación de un Plan de Comunicación:**  
+                    Desarrollar un plan de comunicación que incluya regularmente la formación cultura y gobierno del dato para todos los empleados, 
+                     apostando por su compromiso y comprensión de la importancia de este cambio.
+                     
+                    - **Feedback y Adaptación:**  
+                    Establecer canales de feedback que permitan a los empleados expresar sus inquietudes y sugerencias respecto a esta transición, 
+                     asegurando que el plan de comunicación se adapte y evolucione según las necesidades del personal.
+                    """)
+
+# Data Chasers
+elif opcion == '# Data Chasers':
+
     st.markdown("""
-                # Data Strategy
-                ### Visión y Equipo
-                #### Liderar la transformación de BankValley en innovación financiera y crecimiento sostenible a través de la analítica avanzada.
-                - **Equipo:** Expansión del equipo actual con expertos en riesgo, ingeniería de datos y ciencia de datos para fortalecer la propuesta de valor.
-                - **Conocimiento:** Necesidad de formación especializada en Big Data, Machine Learning, negocio bancario y regulaciones de datos.
-                - **Stakeholders:** Colaboración estrecha con áreas internas del banco, reguladores y seguimiento de la competencia para mantener la ventaja competitiva.
-                - **Infraestructura:** Utilización de la infraestructura en la nube existente del banco para el análisis y desarrollo ágil del nuevo producto.
-                - **Dataset:** Combinación de ricos datos internos del cliente con fuentes de datos externas para entrenar y mejorar los modelos de IA.""")
-
-
-    with st.expander("#### Expansión del Equipo"):
-        st.write("""
-                - **Equipo Actual**:
-                  - *Marketing*: Estrategias de mercado y captación de clientes.
-                  - *Product Owner*: Alineación del producto con necesidades del cliente.
-                  - *Analista de Datos/Negocio*: Análisis de datos para toma de decisiones.
-                  - *Especialista en PYMEs*: Conocimiento del segmento de autónomos.
-                - **Nuevas Incorporaciones**:
-                  - *Analistas de Datos de Riesgo*: Mejorar evaluación de la viabilidad financiera.
-                  - *Data Engineer*: Mantener y escalar infraestructura de datos.
-                  - *Data Scientist*: Desarrollo de modelos predictivos con IA y Machine Learning.
+                # # Data Chasers
+                ### Guiados por Cthulhu, exploramos las profundidades de los datos e invocamos poderosos insights
                 """)
+    
+    st.image("imgs/img1.jpg", caption="BankValley Madrid")
 
-    with st.expander("#### Colaboración con Stakeholders y Optimización de la Infraestructura"):
-        st.write("""
-                - **Colaboración con Stakeholders**:
-                  - Cooperación con áreas de Hipotecas, Riesgos, y TI para alinear estrategias y objetivos.
-                  - Relación continua con reguladores para asegurar cumplimiento y aprovechar regulaciones.
-                - **Optimización de la Infraestructura**:
-                  - Uso de infraestructura en la nube para análisis y seguridad de datos.
-                  - Implementación de soluciones de IA para optimizar procesos y decisiones.
+    st.markdown("""
+                ##### Fomentar un cambio cultural en BankValley es esencial para hacer que los datos sean democráticos, accesibles, valiosos y accionables. 
+                ##### Al hacerlo, mejoramos la toma de decisiones y promovemos un entorno donde la innovación y la ética impulsan nuestra visión.
                 """)
+    
+    
+    col1, col2, col3 = st.columns(3)
+        
+    with col1:
+        with st.expander("#### Cthulhu: Mascota y Embajador"):
+            st.write("""
+                     - **Alineación con Análisis Avanzado**:  
+                    Como una criatura de misterios ocultos y sabiduría arcaica, Cthulhu simboliza perfectamente la exploración y el descubrimiento profundo que caracterizan la analítica avanzada. Su figura mitológica despierta curiosidad y representa la constante búsqueda de conocimiento, haciéndolo el emblema ideal para un equipo que busca desentrañar los secretos ocultos en los datos.
+                    
+                    - **Figura Inspiradora**:  
+                    Cthulhu no solo inspira nuestro enfoque sino que también personifica la cultura de datos de BankValley, 
+                    facilitando la aceptación y el entusiasmo por parte de todos los empleados.
+                    
+                    - **Icono Cultural**:  
+                    Cthulhu es clave en nuestras comunicaciones internas, ayudando a hacer tangible el impacto de los datos en nuestro banco.                    
+                    """)
+        
+    with col2:
+        with st.expander("#### Actividades para Fomentar los Datos"):
+            st.write("""
+                    - **El Rincón de Cthulhu**:  
+                    Espacio de aprendizaje y asistencia para quienes se inician en el uso de datos, haciendo que la analítica sea más accesible.
+                    
+                    - **Encantamientos Arcanos**:  
+                    Talleres prácticos que muestran el análisis de datos en acción para tomar decisiones de negocio comprensibles y aplicables, 
+                    impulsando con ejemplos prácticos la alfabetización de datos.
+                    
+                    - **'Cthulhu’s Code Crypt'**:  
+                    Cursos intensivos y muy prácticos en herramientas y lenguajes de programación para análisis de datos, diseñados para mejorar las habilidades técnicas de los empleados.
+                    """)
 
-    with st.expander("#### Gestión de Datos"):
-        st.write("""
-                **Uso de Datos Internos y Externos**:
-                - **Acceso a Datos Internos**: Utilizamos una amplia base de datos internos que incluye historiales de transacciones, comportamientos de pago, perfiles demográficos y datos de interacciones anteriores con el banco. Esto nos permite realizar análisis personalizados y profundamente informados, identificando tendencias y patrones que guían el desarrollo de productos y la toma de decisiones estratégicas.
+    with col3:
+        with st.expander("#### Medir el Progreso"):
+            st.write("""
+                    - **Adopción de Herramientas Analíticas**:  
+                    Seguimiento del incremento en el uso de herramientas analíticas entre los empleados para garantizar una cultura de datos efectiva.
+                    
+                    - **Calidad en la Toma de Decisiones**:  
+                    Evaluamos cómo la implementación de data products y decisiones basadas en análisis están transformando las operaciones en el banco.
+                    
+                    - **Engagement**:  
+                    Medimos la participación y satisfacción en eventos y talleres de datos, seguimiento del NPS para asegurar la efectividad de nuestras iniciativas y fomentar una mejora continua.
+                    """)
+
+# Nexts Steps...
+elif opcion == '# Nexts steps...':
+    st.write("""
+                #### Lecciones Aprendidas:
+             
+                - La adopción efectiva de estrategias basadas en datos requiere un compromiso organizacional profundo y una cultura que valore y entienda 
+                el uso de datos como una herramienta estratégica.
+
+                - La educación continua y el desarrollo de habilidades en análisis de datos son fundamentales para capacitar a todos los niveles de la organización, 
+                asegurando que las decisiones se tomen sobre bases sólidas y bien informadas.
+
+                - La transparencia en la gestión y uso de los datos es crucial para mantener la confianza tanto interna como externa en las iniciativas de datos.
+
+                #### Factores Clave:
+             
+                - El apoyo continuo de la alta dirección y la integración de los análisis de datos en la toma de decisiones estratégicas son esenciales para el 
+                éxito a largo plazo del proyecto.
+
+                - La colaboración entre departamentos y la clara definición de roles y responsabilidades en la gestión de datos garantizan la coherencia y eficiencia 
+                de las iniciativas basadas en datos.
+
+                - Fomentar una actitud de aprendizaje y mejora continua entre todos los empleados para adaptarse a las cambiantes tecnologías y prácticas del mercado.
+
+                #### Posibles Stoppers:
+             
+                - Un fracaso potencial podría deberse a la resistencia al cambio dentro de la organización o a deficiencias en la infraestructura tecnológica, 
+                lo que limitaría la capacidad de aprovechar plenamente el análisis de datos.
+
+                - La falta de alineación entre los objetivos del proyecto de datos y los objetivos estratégicos del banco podría resultar en iniciativas que no cuentan 
+                con el respaldo necesario o que no cumplen con las expectativas establecidas.
+
+                - La subestimación de los recursos necesarios para la formación y el desarrollo de capacidades en el uso de datos puede resultar en una implementación
+                incompleta y beneficios no realizados.
+
+                #### Próximos Pasos: Implementación de IA Generativa y Análisis Avanzado
                 
-                - **Enriquecimiento con Datos Externos**: Complementamos nuestros datos internos con información proveniente de fuentes externas como registros comerciales, bases de datos de crédito y estudios de mercado. Esto nos ayuda a obtener una vista más completa del entorno económico y financiero en el que operan nuestros clientes, mejorando la precisión de nuestros modelos predictivos y la eficacia de nuestras estrategias de riesgo y marketing.
+                - **Corto Plazo**: Implementación de IA generativa para interacción directa y soporte al cliente, mejorando la personalización y la eficiencia del 
+                servicio al cliente mediante chatbots avanzados que pueden generar respuestas contextuales en tiempo real.
                 
-                - **Integración y Sincronización de Datos**: Aseguramos que la información de diversas fuentes se integre de manera coherente y esté actualizada en tiempo real. Esto es crucial para mantener la integridad de los datos y para proporcionar una base sólida para todas nuestras operaciones analíticas y decisiones automatizadas.
+                - **Medio Plazo**: Utilización de IA basadas en modelos de Mixture of Experts (MoE) para la generación de insights profundos y la automatización de 
+             la toma de decisiones en tiempo real. Estos modelos permitirán a BankValley responder dinámicamente a las condiciones del mercado y ajustar las estrategias 
+             de inversión y gestión de riesgos de manera más efectiva.
                 
-                - **Cumplimiento y Seguridad de Datos**: Cumplimos estrictamente con las regulaciones locales e internacionales sobre protección de datos. Implementamos medidas de seguridad avanzadas para proteger la información contra accesos no autorizados y aseguramos que el uso de datos se maneje con la máxima ética y responsabilidad.
+                - **Largo Plazo**: Exploración de aplicaciones de computación cuántica en el sector bancario para resolver problemas complejos y optimizar operaciones 
+             a una escala previamente inalcanzable. Esto incluirá desde la optimización de carteras hasta la mejora de los modelos de criptografía y seguridad.
                 """)
-
-
