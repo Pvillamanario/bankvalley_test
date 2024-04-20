@@ -49,8 +49,7 @@ if opcion == '# Home':
                 - **# BankValley**: Sumérgete en nuestra identidad como pioneros en banca ética, sostenible e innovadora.
                 - **# Data Oportunity**: En Plan Autónomo. Explora nuestra primera propuesta de oportunidad de negocio. Un ejemplo concreto de lo que podemos lograr con el poder del análisis de datos.
                 - **# Data Governance**: Entiende cómo gobernamos y valoramos los datos como el activo principal en nuestra toma de decisiones.
-                - **# Data Chasers**: Conoce al equipo de vanguardia que está transformando BankValley en una entidad guiada por datos.
-                - **# Data Culture**: Aprende sobre nuestra iniciativa para dinfundir una cultura de datos en toda la empresa, donde cada dato cuenta.
+                - **# Data Chasers**: Conoce al equipo y aprende sobre nuestra iniciativa para difundir una cultura de datos en toda la empresa.
             
                 #      
                 #### Únete a nosotros para transformar el futuro de BankValley 
@@ -326,7 +325,9 @@ elif opcion == '# Data Governance':
                     
                     La implementación efectiva de una estrategia de gobernanza de datos es esencial para organizaciones como BankValley, 
                     donde la ética y la responsabilidad son pilares fundamentales. Al asegurar una gestión de datos adecuada, no solo se optimizan las operaciones internas, 
-                    sino que también se refuerza la confianza en nuestra institución financiera. Investigaciones indican que una mala gobernanza de datos puede llevar al 
+                    sino que también se refuerza la confianza en nuestra institución financiera. 
+                    
+                    Estudios indican que una mala gobernanza de datos puede llevar al 
                     fracaso de hasta un 40% de los proyectos empresariales, lo cual subraya la necesidad de establecer prácticas robustas de manejo de datos desde el inicio.
 
                     Esta propuesta ayudará a BankValley a enfrentar los desafíos de transformarse en una organización completamente orientada a datos, 
