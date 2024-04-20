@@ -152,7 +152,7 @@ elif opcion == '# Data Opportunity':
                 ### Data Opportunity  
                 # 'En Plan Autónomo'
                 ###
-                **'En Plan Autónomo'** aprovecha la tecnología, las personas y la cultura del dato para ofrecer soluciones financieras personalizadas.
+                **'En Plan Autónomo'** aprovecha la tecnología, las personas y la cultura del dato para ofrecer una solución financiera personalizada.
 
                 Desbloqueamos nuevas posibilidades para autónomos, fusionando tecnología de vanguardia y financiación ética para convertir la viabilidad 
                 económica en una realidad sostenible.  
@@ -277,7 +277,7 @@ elif opcion == '# Data Opportunity':
         
     with st.expander("#### KPIs para medir el Éxito"):
 
-        col1, col2 = st.columns([1, 1])  
+        col1, col2, col3 = st.columns([5, 1, 4])  
 
         with col1:
             st.write("""
@@ -302,9 +302,12 @@ elif opcion == '# Data Opportunity':
                     Resultados de encuestas de satisfacción específicas y número de referencias o recomendaciones del producto por parte de clientes 
                     autónomos existentes.  
                     """)
-            
+
         with col2:
-            st.image("imgs/img1.jpg", caption="BankValley Madrid", width = 550)
+            st.write("")
+
+        with col3:
+            st.image("imgs/BankValley_7.jpeg", caption="BankValley Madrid", width = 550)
 
 
     # with st.expander("#### Business Case"):
@@ -313,7 +316,7 @@ elif opcion == '# Data Opportunity':
 # Data Governance
 elif opcion == '# Data Governance':
 
-    col1, col2 = st.columns([3, 2])  
+    col1, col2, col3 = st.columns([4, 1, 3])  
 
     with col1:
         st.markdown("""
@@ -329,8 +332,11 @@ elif opcion == '# Data Governance':
                     Esta propuesta ayudará a BankValley a enfrentar los desafíos de transformarse en una organización completamente orientada a datos, 
                     asegurando que la calidad y la integridad de los datos se mantengan en cada paso del camino.
                     """)
-        
+   
     with col2:
+            st.write("")    
+    
+    with col3:
         st.image("imgs/BankValley_5.jpeg", caption="Hacia un Data Governance")
 
 
@@ -434,8 +440,7 @@ elif opcion == '# Data Chasers':
                 ##### Fomentar un cambio cultural en BankValley es esencial para hacer que los datos sean democráticos, accesibles, valiosos y accionables. 
                 ##### Al hacerlo, mejoramos la toma de decisiones y promovemos un entorno donde la innovación y la ética impulsan nuestra visión.
                 """)
-    
-    
+
     col1, col2, col3 = st.columns(3)
         
     with col1:
@@ -518,7 +523,7 @@ elif opcion == '# Nexts steps...':
                 - **Corto Plazo**: Implementación de IA generativa para interacción directa y soporte al cliente, mejorando la personalización y la eficiencia del 
                 servicio al cliente mediante chatbots avanzados que pueden generar respuestas contextuales en tiempo real.
                 
-                - **Medio Plazo**: Utilización de IA basadas en modelos de Mixture of Experts (MoE) para la generación de insights profundos y la automatización de 
+                - **Medio Plazo**: Utilización de IA basadas en federación modelos de Mixture of Experts (MoE) para la generación de insights profundos y la automatización de 
              la toma de decisiones en tiempo real. Estos modelos permitirán a BankValley responder dinámicamente a las condiciones del mercado y ajustar las estrategias 
              de inversión y gestión de riesgos de manera más efectiva.
                 
